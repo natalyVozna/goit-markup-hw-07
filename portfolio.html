@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
@@ -225,7 +227,7 @@
           </address>
         </div>
         <div class="col-social">
-          <h2 class="title-social">приєднуйтесь</h2>
+          <h2 class="title-footer">приєднуйтесь</h2>
           <ul class="social-links list">
             <li class="social-item dark">
               <a class="link" href="">
@@ -256,6 +258,21 @@
               </a>
             </li>
           </ul>
+        </div>
+        <div class="col-mailing">
+          <form class="form-footer">
+            <label class="footer-field">
+              <span class="title-footer">Підпишіться на розсилку</span>
+              <input type="email" class="input-footer" name="meil-footer" placeholder="E-mail" />
+            </label>
+
+            <button type="submit" class="btn-reset button primary footer-btn">
+              Підписатися
+              <svg class="icon-send">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
         </div>
       </div>
     </footer>
