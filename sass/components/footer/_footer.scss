@@ -10,11 +10,15 @@
     margin-right: 70px;
   }
 
+  &__col-social {
+    margin-right: 93px;
+  }
+
   &__title {
     margin-bottom: 20px;
     padding-top: 12px;
 
-    color: var(--white-color);
+    color: $white-color;
     font-weight: 700;
     font-size: 14px;
     line-height: 1.14;
@@ -26,6 +30,27 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+  }
+}
+
+.form-footer__input {
+  margin: 0;
+  padding: 15px 16px 15px 16px;
+  height: 50px;
+  width: 100%;
+  margin-right: 12px;
+
+  color: $white-color;
+  background-color: transparent;
+  font: inherit;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+
+  transition: border 250ms $timing-function;
+
+  &:focus {
+    border: 1px solid $accent-color;
   }
 }
 
@@ -41,7 +66,7 @@
   margin-bottom: 20px;
   padding-top: 12px;
 
-  color: var(--white-color);
+  color: $white-color;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
@@ -63,13 +88,13 @@
 }
 
 .input-footer {
-  cursor: pointer;
+  // cursor: pointer;
   margin: 0;
   padding: 15px 16px 15px 16px;
   height: 50px;
   width: 100%;
   margin-right: 12px;
-  color: var(--white-color);
+  color: $white-color;
 
   background-color: transparent;
   font: inherit;
@@ -77,12 +102,12 @@
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
 
-  transition: border 250ms var(--timing-function);
+  transition: border 250ms $timing-function;
 }
 
 /* .input-footer:hover, */
 .input-footer:focus {
-  border: 1px solid var(--accent-color);
+  border: 1px solid $accent-color;
 }
 
 .input-footer::placeholder {
@@ -111,5 +136,5 @@
   margin-left: 12px;
   width: 24px;
   height: 24px;
-  fill: var(--white-color);
+  fill: $white-color;
 }
