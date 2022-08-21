@@ -355,56 +355,63 @@
       <!-- Modal window -->
       <div class="backdrop backdrop--is-hidden" data-modal>
         <div class="popup">
-          <button data-modal-close class="close-btn btn-reset" type="button">
+          <button data-modal-close class="popup__close-btn btn-reset" type="button">
             <svg class="popup__close-icon">
               <use href="./images/icons.svg#icon-close"></use>
             </svg>
           </button>
-          <section class="section-form">
-            <h1 class="title">Залиште свої дані, ми вам передзвонимо</h1>
-            <form class="form" autocomplete="off">
+          <section class="popup__form">
+            <h1 class="popup__title">Залиште свої дані, ми вам передзвонимо</h1>
+            <form class="form-popup" autocomplete="off">
               <div role="group">
-                <div class="form-field">
-                  <label for="name" class="form-label">Ім'я</label>
-                  <input type="text" class="form-input" name="name" id="name" />
-                  <svg class="form-icon">
+                <div class="form-popup__field">
+                  <label for="name" class="form-popup__label">Ім'я</label>
+                  <input type="text" class="form-popup__input" name="name" id="name" />
+                  <svg class="form-popup__icon">
                     <use href="./images/icons.svg#icon-person"></use>
                   </svg>
                 </div>
-                <div class="form-field">
-                  <label for="phone" class="form-label">Телефон</label>
-                  <input type="tel" class="form-input" name="phone" id="phone" />
-                  <svg class="form-icon">
+                <div class="form-popup__field">
+                  <label for="phone" class="form-popup__label">Телефон</label>
+                  <input type="tel" class="form-popup__input" name="phone" id="phone" />
+                  <svg class="form-popup__icon">
                     <use href="./images/icons.svg#icon-email"></use>
                   </svg>
                 </div>
-                <div class="form-field">
-                  <label for="emeil" class="form-label">Пошта</label>
-                  <input type="email" class="form-input" name="emeil" id="emeil" />
-                  <svg class="form-icon">
+                <div class="form-popup__field">
+                  <label for="emeil" class="form-popup__label">Пошта</label>
+                  <input type="email" class="form-popup__input" name="emeil" id="emeil" />
+                  <svg class="form-popup__icon">
                     <use href="./images/icons.svg#icon-phone"></use>
                   </svg>
                 </div>
               </div>
-              <div class="form-field">
-                <label for="comment" class="form-label">Коментар</label>
+              <div class="form-popup__field">
+                <label for="comment" class="form-popup__label">Коментар</label>
                 <textarea
-                  class="comment"
+                  class="form-popup__comment"
                   name="comment"
                   placeholder="Введіть текст"
                   id="comment"
                 ></textarea>
               </div>
-              <div class="form-field field-checkbox">
-                <label class="form-label policy">
-                  <input type="checkbox" name="policy" value="policy" class="checkbox" />
-                  <span class="checkbox-icon"></span>
+              <div class="form-popup__field form-popup__field--checkbox">
+                <label class="form-popup__label form-popup__label--checkbox">
+                  <input
+                    class="form-popup__checkbox"
+                    type="checkbox"
+                    name="policy"
+                    value="policy"
+                  />
+                  <span class="form-popup__check-icon"></span>
                   Погоджуюся з розсилкою та приймаю&nbsp;
-                  <a href="/" class="policy-link">Умови договору</a>
+                  <a href="/" class="form-popup__link">Умови договору</a>
                 </label>
               </div>
 
-              <button type="submit" class="btn-reset button primary send-btn">Відправити</button>
+              <button type="submit" class="button button--primary form-popup__btn">
+                Відправити
+              </button>
             </form>
           </section>
         </div>
