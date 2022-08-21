@@ -55,6 +55,13 @@ img {
   display: block;
 }
 
+:active,
+:hover,
+:focus {
+  outline: 0;
+  outline-offset: 0;
+}
+
 .list {
   list-style: none;
 }
@@ -73,7 +80,7 @@ img {
 }
 
 /* ------------- Header -----------*/
-.header {
+/* .header {
   border-bottom: 1px solid #ececec;
 }
 
@@ -111,7 +118,7 @@ img {
 }
 
 /*------------ Site nav ------------*/
-.site-nav {
+/* .site-nav {
   display: flex;
   margin-left: 93px;
 }
@@ -141,6 +148,7 @@ img {
 .site-nav .link.current {
   color: var(--accent-color);
 }
+*/
 
 /* .site-nav .link::after {
   position: absolute;
@@ -156,7 +164,7 @@ img {
   transition: transform 250ms var(--timing-function);
 } */
 
-.site-nav .link.current::after {
+/* .site-nav .link.current::after {
   position: absolute;
   display: block;
   content: '';
@@ -169,7 +177,7 @@ img {
   transform: scale(1);
 
   transition: transform 250ms var(--timing-function);
-}
+} */
 
 /*---------------- Contacts header--------------------- */
 .contacts {
@@ -217,9 +225,9 @@ img {
 }
 
 /*--------------- Main -----------*/
-.section {
+/* .section {
   padding: 94px 0;
-}
+} */
 
 .overlay {
   display: flex;
@@ -251,7 +259,7 @@ img {
   text-transform: uppercase;
 }
 
-.button {
+/* .button {
   font-family: inherit;
   border: none;
   border-radius: 4px;
@@ -272,7 +280,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
   transition: background-color 250ms var(--timing-function);
-}
+} */
 
 .button.primary:hover,
 .button.primary:focus {
@@ -473,7 +481,7 @@ img {
 }
 
 .team-box .social-links {
-  padding: 0 32px;
+  /* padding: 0 32px; */
 }
 
 .social-item .link {
@@ -561,7 +569,7 @@ img {
   margin-right: 70px;
 }
 
-.contacts-footer {
+/* .contacts-footer {
   display: flex;
   flex-direction: column;
   width: 231px;
@@ -589,7 +597,7 @@ img {
 .contacts-footer .link:hover,
 .contacts-footer .link:focus {
   color: var(--accent-color);
-}
+} */
 
 .title-footer {
   margin-bottom: 20px;
@@ -623,6 +631,7 @@ img {
   height: 50px;
   width: 100%;
   margin-right: 12px;
+  color: var(--white-color);
 
   background-color: transparent;
   font: inherit;
@@ -886,6 +895,8 @@ img {
 
 .form-label.policy {
   display: flex;
+  margin-bottom: 0;
+
   align-items: center;
   font-size: 14px;
   line-height: 1.71;
@@ -999,6 +1010,7 @@ img {
 
 .field-checkbox {
   flex-direction: row;
+  justify-content: center;
   margin-top: 20px;
   margin-bottom: 30px;
 }
