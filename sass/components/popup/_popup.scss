@@ -7,7 +7,7 @@
   background-color: rgba(0, 0, 0, 0.2);
   opacity: 1;
 
-  transition: opacity 250ms;
+  transition: opacity 250ms $timing-function, visibility 250ms $timing-function;
 
   &--is-hidden {
     opacity: 0;
@@ -32,7 +32,7 @@
   transition: transform 250ms $timing-function;
 
   .backdrop--is-hidden & {
-    transform: translate(-50%, -50%) scale(0.9);
+    transform: translate(-50%, -50%) scale(0.7);
   }
 
   &__close-icon {
@@ -77,39 +77,3 @@
     color: $accent-color;
   }
 }
-
-// .backdrop.is-hidden {
-//   opacity: 0;
-//   pointer-events: none;
-//   visibility: hidden;
-// }
-
-// .backdrop.is-hidden .modal {
-//   transform: translate(-50%, -50%) scale(0.9);
-// }
-
-// .close-btn {
-//   position: absolute;
-//   right: 8px;
-//   top: 8px;
-//   width: 30px;
-//   height: 30px;
-//   cursor: pointer;
-
-//   border: 1px solid rgba(0, 0, 0, 0.1);
-//   border-radius: 50%;
-//   background-color: $white-color;
-//   color: #000;
-
-//   transition: color 250ms $timing-function;
-// }
-
-// .close-btn:hover {
-//   color: $accent-color;
-// }
-
-// .modal .icon-close {
-//   width: 11px;
-//   height: 11px;
-//   fill: currentColor;
-// }
