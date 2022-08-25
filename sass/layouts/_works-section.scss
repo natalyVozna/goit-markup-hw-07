@@ -1,7 +1,12 @@
-.works {
-  // display: flex;
-  // gap: 30px;
+.section-works {
+  display: none;
 
+  @include media-min($desktop) {
+    display: block;
+  }
+}
+
+.works {
   &__item {
     position: relative;
     display: flex;

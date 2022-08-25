@@ -1,0 +1,136 @@
+.navigation {
+  @include media-min($tablet) {
+    display: flex;
+  }
+
+  &__list {
+    display: none;
+
+    @include media-min($tablet) {
+      display: flex;
+      margin-left: 88px;
+      gap: 51px;
+    }
+    @include media-min($desktop) {
+      gap: 93px;
+    }
+  }
+}
+
+.navigation__link {
+  position: relative;
+  display: block;
+  padding: 32px 0;
+
+  color: $title-text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  text-decoration: none;
+
+  transition: color 250ms $timing-function;
+
+  &:hover,
+  &:focus,
+  &--current {
+    color: $accent-color;
+  }
+
+  &--current::after {
+    position: absolute;
+    display: block;
+    content: '';
+    bottom: -1px;
+    height: 4px;
+    background-color: $accent-color;
+    border-radius: 2px;
+    width: 100%;
+
+    transform: scale(1);
+
+    transition: transform 250ms $timing-function;
+  }
+}
+
+.navigation__btn {
+  position: absolute;
+  right: 15px;
+  top: 10px;
+  z-index: 2;
+  padding: 0;
+  margin: 0;
+  border: none;
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+}
+
+.navigation__icon {
+  width: 40px;
+  height: 40px;
+  fill: $title-text;
+}
+
+.navigation__icon-cross {
+  display: none;
+
+  .navigation__btn.is-open & {
+    display: block;
+  }
+}
+
+.navigation__btn.is-open .navigation__icon-menu {
+  display: none;
+}
+
+// .navigation {
+//   display: flex;
+
+//   &__list {
+//     display: flex;
+//     margin-left: 93px;
+//   }
+
+//   &__item:not(:last-child) {
+//     margin-right: 50px;
+//   }
+// }
+
+// .navigation__link {
+//   position: relative;
+//   display: block;
+//   padding: 32px 0;
+
+//   color: $title-text;
+//   font-style: normal;
+//   font-weight: 500;
+//   font-size: 14px;
+//   line-height: 1.14;
+//   letter-spacing: 0.02em;
+//   text-decoration: none;
+
+//   transition: color 250ms $timing-function;
+
+//   &:hover,
+//   &:focus,
+//   &--current {
+//     color: $accent-color;
+//   }
+
+//   &--current::after {
+//     position: absolute;
+//     display: block;
+//     content: '';
+//     bottom: -1px;
+//     height: 4px;
+//     background-color: $accent-color;
+//     border-radius: 2px;
+//     width: 100%;
+
+//     transform: scale(1);
+
+//     transition: transform 250ms $timing-function;
+//   }
+// }
