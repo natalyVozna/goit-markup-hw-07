@@ -9,6 +9,7 @@
   letter-spacing: 0.03em;
 
   text-decoration: none;
+
   @include media-min($desktop) {
     font-size: 26px;
   }
