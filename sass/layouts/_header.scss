@@ -16,15 +16,15 @@
   }
 
   &__nav {
-    // display: flex;
+    display: flex;
   }
 
   &__site-nav {
-    // display: flex;
-    // margin-left: 93px;
+    display: flex;
+    margin-left: 93px;
   }
   &__item:not(:last-child) {
-    // margin-right: 50px;
+    margin-right: 50px;
   }
 }
 
@@ -39,7 +39,7 @@
   }
 
   @include media-min($desktop) {
-    // display: flex;
+    display: flex;
     flex-direction: row;
     gap: 30px;
   }
@@ -56,7 +56,7 @@
   color: $primary-text;
   font-weight: 500;
   font-style: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;

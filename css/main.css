@@ -497,6 +497,17 @@ body.modal-open {
     flex-wrap: nowrap;
   }
 }
+.header__nav {
+  display: flex;
+}
+.header__site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+.header__item:not(:last-child) {
+  margin-right: 50px;
+}
+
 /*---------------- Contacts header--------------------- */
 .header-contacts {
   display: none;
@@ -510,6 +521,7 @@ body.modal-open {
 }
 @media screen and (min-width: 1200px) {
   .header-contacts {
+    display: flex;
     flex-direction: row;
     gap: 30px;
   }
@@ -521,7 +533,7 @@ body.modal-open {
   color: #757575;
   font-weight: 500;
   font-style: normal;
-  font-size: 12px;
+  font-size: 14px;
   line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -644,12 +656,16 @@ body.modal-open {
   margin-bottom: 30px;
   color: #fff;
   font-weight: 900;
-  font-size: 26px;
-  line-height: 1.6;
+  font-size: 44px;
+  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
+.advantages {
+  display: flex;
+  padding-bottom: 0;
+}
 @media screen and (max-width: 767px) {
   .advantages__item + .advantages__item {
     margin-top: 30px;
@@ -740,6 +756,7 @@ body.modal-open {
 
 .team {
   background-color: #f5f4fa;
+  display: flex;
 }
 .team__img {
   width: 100%;
